@@ -1,0 +1,13 @@
+<h2>Employees List</h2>
+<ul class="items">
+  <li *ngFor="let employee of Employees" (click)="onSelect(employee)">
+    <a>
+      <span class="badge">{{ employee.id }}</span> {{ employee.name }}
+    </a>
+   
+    <!-- <button (click)="showContact()">Show Contact</button> -->
+  </li>
+</ul>
+<button (click)="showOverview()">Show Overview</button>
+
+<router-outlet/>

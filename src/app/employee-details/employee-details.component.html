@@ -1,0 +1,15 @@
+<div class="container">
+    <ul>
+        <li *ngFor="let employee of EmployeesDetails">
+            <div>
+                <strong>ID:</strong> {{ employee.id }}
+              </div>
+              <div>
+                <strong>Name:</strong> {{ employee.name }}
+              </div>
+              <div>
+                <strong>Age:</strong> {{ employee.age }}
+              </div>
+        </li>
+    </ul>
+</div>
